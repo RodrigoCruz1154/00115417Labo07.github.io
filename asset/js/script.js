@@ -25,4 +25,15 @@ window.addEventListener('load',()=>{
     {
      console.log(element);   
     }*/
-})
+
+    /*Ejercicio 3*/
+    var boton = document.getElementById("btn-click");
+    boton.onclick = function(evt){
+        alert("Hola mundo");
+    }
+    var btnCopy = document.getElementById("btnCopy");
+    btnCopy.onclick = function(evt){
+        let msj = document.getElementById('textMsj').value;
+        document.getElementById('showMsj').innerText = msj;
+    } 
+});
