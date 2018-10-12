@@ -7,8 +7,22 @@ window.addEventListener('load',()=>{
     container.style.width = "200px";
     container.style.height = "200px";
 
-    container.innerHTML = "<input type=”text” placeholder=’escriba su texto’>";
+    container.innerHTML = "<input type=”text” placeholder=’Escriba su texto’>";
 
     /*Ejercicio 2*/
-    
+    //var containers = document.getElementsByClassName("c2");
+    var containers = document.querySelectorAll(".c2"); /*Guarda todos los elementos que contiene esa clase en un arreglo para poder manipularlos con un forEach que busca objeto por objeto*/
+    containers.forEach(e =>{
+        e.style.backgroundColor = "#009999";
+    });
+    containers.forEach(d =>{
+        d.innerHTML = "<input type='text' placeholder='Escriba su texto'>";
+    });
+    /*containers.array.forEach(element => {
+        containers.style.backgroundColor = "#009999";
+    });*/
+   /* for(var element in containers)
+    {
+     console.log(element);   
+    }*/
 })
